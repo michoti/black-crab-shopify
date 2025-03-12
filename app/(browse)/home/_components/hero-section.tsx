@@ -1,7 +1,7 @@
-import { Button } from "components/ui/button"
+import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
-import { cn } from "utils/cn"
+import { cn } from "@/utils/cn"
 
 export function HeroSection({ title, className }: { title: string; className?: string }) {
   return (

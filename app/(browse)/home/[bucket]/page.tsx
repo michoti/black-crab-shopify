@@ -1,9 +1,10 @@
-import { BUCKETS } from "constants/index"
+
 import { AnnouncementBar } from "../_components/announcement-bar"
 import { HeroSection } from "../_components/hero-section"
 import { CategoriesSection } from "../_components/categories-section"
 import { getFeaturedProducts } from "@/lib/algolia"
 import { FeaturedProductsSection } from "../_components/featured-products-section"
+import { BUCKETS } from "@/constants"
 
 export const revalidate = 86400
 

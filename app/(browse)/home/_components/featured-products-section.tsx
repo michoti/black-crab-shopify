@@ -1,6 +1,6 @@
-import { ProductCard } from "components/product-card"
-import { CommerceProduct } from "types"
-import { cn } from "utils/cn"
+
+import { ProductCard } from "@/components/product-card"
+import { CommerceProduct } from "@/types"
 
 export const FeaturedProductsSection = ({
   products,

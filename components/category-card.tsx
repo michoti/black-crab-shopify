@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import { PlatformCollection } from "lib/shopify/types"
-import { cn } from "utils/cn"
+import { PlatformCollection } from "@/lib/shopify/types"
+import { cn } from "@/utils/cn"
 
 interface CategoryCardProps extends Pick<PlatformCollection, "title" | "image" | "handle"> {
   index: number

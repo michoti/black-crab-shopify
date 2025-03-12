@@ -1,6 +1,6 @@
-import { CategoryCard } from "components/category-card"
-import { cn } from "utils/cn"
-import { getCategories } from "lib/algolia"
+import { CategoryCard } from "@/components/category-card"
+import { getCategories } from "@/lib/algolia"
+import { cn } from "@/utils/cn"
 
 export async function CategoriesSection() {
   const { hits: categories } = await getCategories({
