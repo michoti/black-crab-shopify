@@ -8,12 +8,12 @@ import { usePathname, useRouter } from "next/navigation"
 
 import { useClickAway } from "@uidotdev/usehooks"
 
-import { cn } from "utils/cn"
-import { getHighlightedText } from "utils/highlighted-text"
-import { useAutocomplete } from "utils/use-autocomplete"
+import { cn } from "@/utils/cn"
+import { getHighlightedText } from "@/utils/highlighted-text"
+import { useAutocomplete } from "@/utils/use-autocomplete"
 
-import { SearchIcon } from "components/icons/search-icon"
-import { Spinner } from "components/spinner"
+import { SearchIcon } from "@/components/icons/search-icon"
+import { Spinner } from "@/components/spinner"
 
 interface AutocompleteProps {
   className?: string

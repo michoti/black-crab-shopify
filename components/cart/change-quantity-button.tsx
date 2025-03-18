@@ -1,9 +1,9 @@
 import { useTransition } from "react"
 import { toast } from "sonner"
 
-import { updateItemQuantity } from "app/actions/cart.actions"
-import { Spinner } from "components/spinner"
-import { useCartStore } from "stores/cart-store"
+import { updateItemQuantity } from "@/app/actions/cart.actions"
+import { Spinner } from "@/components/spinner"
+import { useCartStore } from "@/stores/cart-store"
 
 interface ChangeQuantityButtonProps {
   id: string

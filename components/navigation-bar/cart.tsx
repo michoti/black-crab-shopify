@@ -1,9 +1,9 @@
 "use client"
 
-import { cn } from "utils/cn"
+import { cn } from "@/utils/cn"
 import { OpenCartButton } from "./open-cart-button"
-import { useCartStore } from "stores/cart-store"
-import { BagIcon } from "components/icons/bag-icon"
+import { useCartStore } from "@/stores/cart-store"
+import { BagIcon } from "@/components/icons/bag-icon"
 
 interface CartProps {
   className?: string

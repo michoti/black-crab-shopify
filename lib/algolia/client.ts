@@ -11,7 +11,7 @@ import {
   type SearchSingleIndexProps,
 } from "algoliasearch"
 
-import { env } from "env.mjs"
+import { env } from "@/env.mjs"
 
 import { FilterBuilder } from "./filter-builder"
 

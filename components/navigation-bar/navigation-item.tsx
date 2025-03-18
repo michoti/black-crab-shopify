@@ -1,7 +1,7 @@
 "use client"
 
 import type { MouseEvent } from "react"
-import { ChevronIcon } from "components/icons/chevron-icon"
+import { ChevronIcon } from "@/components/icons/chevron-icon"
 import { NavItem } from "./types"
 import Link from "next/link"
 import { usePathname } from "next/navigation"

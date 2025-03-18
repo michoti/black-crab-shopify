@@ -1,8 +1,8 @@
 import { Suspense } from "react"
-import { ChevronIcon } from "components/icons/chevron-icon"
+import { ChevronIcon } from "@/components/icons/chevron-icon"
 import dynamic from "next/dynamic"
 
-import { cn } from "utils/cn"
+import { cn } from "@/utils/cn"
 import { Autocomplete } from "./autocomplete"
 import { Cart } from "./cart"
 import { Favorites } from "./favorites"
@@ -10,14 +10,14 @@ import { ImageGridItem, NavItem, TextGridItem, TextImageGridItem } from "./types
 import { ImageGridVariant } from "./variants/image-grid"
 import { TextGridVariant } from "./variants/text-grid"
 import { TextImageGridVariant } from "./variants/text-image-grid"
-import { Skeleton } from "components/ui/skeleton"
-import { CloseIcon } from "components/icons/close-icon"
+import { Skeleton } from "@/components/ui/skeleton"
+import { CloseIcon } from "@/components/icons/close-icon"
 import { SearchButton } from "./search-button"
 import { NavigationItem } from "./navigation-item"
 import Link from "next/link"
-import { GithubBadge } from "components/github-badge"
+import { GithubBadge } from "@/components/github-badge"
 
-const ProductAddedAlert = dynamic(() => import("components/product/product-added-alert").then((mod) => mod.ProductAddedAlert))
+const ProductAddedAlert = dynamic(() => import("@/components/product/product-added-alert").then((mod) => mod.ProductAddedAlert))
 
 interface NavigationBarProps {
   items: NavItem[]

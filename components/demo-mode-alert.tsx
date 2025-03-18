@@ -1,5 +1,5 @@
-import { Alert, AlertDescription, AlertTitle } from "components/ui/alert"
-import { isDemoMode } from "utils/demo-utils"
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import { isDemoMode } from "@/utils/demo-utils"
 
 export function DemoModeAlert() {
   if (!isDemoMode()) return null

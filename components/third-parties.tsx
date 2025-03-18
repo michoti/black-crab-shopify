@@ -1,8 +1,8 @@
 import { GoogleTagManager } from "@next/third-parties/google"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { env } from "env.mjs"
-import { getVercelFlagOverrides } from "utils/get-vercel-flag-overrides"
+import { env } from "@/env.mjs"
+import { getVercelFlagOverrides } from "@/utils/get-vercel-flag-overrides"
 
 export async function ThirdParties() {
   const flags = await getVercelFlagOverrides()

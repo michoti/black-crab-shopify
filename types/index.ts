@@ -1,4 +1,4 @@
-import { PlatformProduct } from "lib/shopify/types"
+import { PlatformProduct } from "@/lib/shopify/types"
 
 export type SearchParamsType = Record<string, string | string[] | undefined>
 

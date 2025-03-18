@@ -10,7 +10,7 @@ export function getDemoProducts(): {
   totalHits: number
   independentFacetDistribution: Record<string, unknown>
 } {
-  const allProducts = require("public/demo-data.json")
+  const allProducts = require("@/public/demo-data.json")
   return {
     hits: allProducts.hits as Hit<CommerceProduct>[],
     totalPages: 1,
@@ -25,7 +25,7 @@ export function getDemoSingleProduct(handle: string) {
 }
 
 export function getDemoCategories() {
-  const allCategories = require("public/demo-categories-data.json")
+  const allCategories = require("@/public/demo-categories-data.json")
 
   return {
     hits: allCategories as Hit<PlatformCollection>[],
@@ -41,7 +41,7 @@ export function getDemoSingleCategory(handle: string) {
 }
 
 export function getDemoProductReviews() {
-  return require("public/demo-product-reviews-data.json") as { reviews: Review[]; total: number }
+  return require("@/public/demo-product-reviews-data.json") as { reviews: Review[]; total: number }
 }
 
 export function isDemoMode(): boolean {

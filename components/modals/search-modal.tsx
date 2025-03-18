@@ -3,16 +3,16 @@ import { type KeyboardEvent } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 
-import { type Modal, useModalStore } from "stores/modal-store"
+import { type Modal, useModalStore } from "@/stores/modal-store"
 
-import { useAutocomplete } from "utils/use-autocomplete"
-import { getHighlightedText } from "utils/highlighted-text"
+import { useAutocomplete } from "@/utils/use-autocomplete"
+import { getHighlightedText } from "@/utils/highlighted-text"
 
-import { Input } from "components/ui/input"
-import { Button } from "components/ui/button-old"
-import { Spinner } from "components/spinner"
-import { Dialog, DialogClose, DialogContent, DialogHeader, DialogTitle } from "components/ui/dialog"
-import { ProductCard } from "components/product-card"
+import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button-old"
+import { Spinner } from "@/components/spinner"
+import { Dialog, DialogClose, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import { ProductCard } from "@/components/product-card"
 
 export function SearchModal() {
   const router = useRouter()

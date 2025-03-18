@@ -1,6 +1,6 @@
 "use client"
 
-import { useCartStore } from "stores/cart-store"
+import { useCartStore } from "@/stores/cart-store"
 
 export function OpenCartButton() {
   const openCart = useCartStore((s) => s.openCart)

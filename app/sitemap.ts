@@ -1,7 +1,7 @@
-import { env } from "env.mjs"
+import { env } from "@/env.mjs"
 import { MetadataRoute } from "next"
-import { getCategories, getProducts } from "lib/algolia"
-import { HITS_PER_PAGE } from "constants/index"
+import { getCategories, getProducts } from "@/lib/algolia"
+import { HITS_PER_PAGE } from "@/constants/index"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [

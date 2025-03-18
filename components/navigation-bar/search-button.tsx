@@ -1,9 +1,9 @@
 "use client"
 
-import { useModalStore } from "stores/modal-store"
+import { useModalStore } from "@/stores/modal-store"
 
-import { ThinSearchIcon } from "components/icons/thin-search-icon"
-import { Button } from "components/ui/button-old"
+import { ThinSearchIcon } from "@/components/icons/thin-search-icon"
+import { Button } from "@/components/ui/button-old"
 
 export function SearchButton() {
   const openModal = useModalStore((s) => s.openModal)

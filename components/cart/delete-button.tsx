@@ -1,9 +1,9 @@
 import { useTransition } from "react"
 
-import { removeCartItem } from "app/actions/cart.actions"
-import { LoadingDots } from "components/loading-dots"
-import { useCartStore } from "stores/cart-store"
-import { cn } from "utils/cn"
+import { removeCartItem } from "@/app/actions/cart.actions"
+import { LoadingDots } from "@/components/loading-dots"
+import { useCartStore } from "@/stores/cart-store"
+import { cn } from "@/utils/cn"
 
 interface DeleteButtonProps {
   id: string

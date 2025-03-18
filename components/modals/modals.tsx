@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic"
 import React from "react"
-import { type Modal, useModalStore } from "stores/modal-store"
+import { type Modal, useModalStore } from "@/stores/modal-store"
 import { ReviewModal } from "./review-modal"
 
 const SearchModal = dynamic(() => import("./search-modal").then((m) => m.SearchModal), { loading: Placeholder })

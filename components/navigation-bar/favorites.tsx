@@ -1,6 +1,6 @@
 import Link from "next/link"
-import { FavoritesIcon } from "components/icons/favorites-icon"
-import { cn } from "utils/cn"
+import { FavoritesIcon } from "@/components/icons/favorites-icon"
+import { cn } from "@/utils/cn"
 
 interface FavoritesProps {
   className?: string

@@ -1,7 +1,7 @@
 import { unstable_cache } from "next/cache"
 import { storefrontClient } from "./client"
 import type { PlatformItemInput } from "./types"
-import { TAGS } from "constants/index"
+import { TAGS } from "@/constants/index"
 
 export const getPage = unstable_cache(async (handle: string) => await storefrontClient.getPage(handle), ["page"], { revalidate: 86400 })
 

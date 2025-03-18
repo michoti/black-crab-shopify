@@ -6,18 +6,18 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { toast } from "sonner"
 
-import { useModalStore } from "stores/modal-store"
+import { useModalStore } from "@/stores/modal-store"
 
-import { cn } from "utils/cn"
+import { cn } from "@/utils/cn"
 
-import { Form } from "components/ui/form"
-import { submitReview } from "app/actions/reviews.actions"
-import { StarIcon } from "components/icons/star-icon"
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "components/ui/dialog"
-import { Button } from "components/ui/button-old"
-import { FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "components/ui/form"
-import { Textarea } from "components/ui/textarea"
-import { Input } from "components/ui/input"
+import { Form } from "@/components/ui/form"
+import { submitReview } from "@/app/actions/reviews.actions"
+import { StarIcon } from "@/components/icons/star-icon"
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import { Button } from "@/components/ui/button-old"
+import { FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
+import { Textarea } from "@/components/ui/textarea"
+import { Input } from "@/components/ui/input"
 
 const formSchema = z.object({
   email: z.string().email({ message: "Provide email address" }).min(3).max(64),

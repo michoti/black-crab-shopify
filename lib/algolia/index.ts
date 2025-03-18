@@ -1,15 +1,15 @@
 import { unstable_cache } from "next/cache"
 
-import { env } from "env.mjs"
+import { env } from "@/env.mjs"
 
-import { getDemoCategories, getDemoProductReviews, getDemoProducts, getDemoSingleCategory, getDemoSingleProduct, isDemoMode } from "utils/demo-utils"
-import { notifyOptIn } from "utils/opt-in"
+import { getDemoCategories, getDemoProductReviews, getDemoProducts, getDemoSingleCategory, getDemoSingleProduct, isDemoMode } from "@/utils/demo-utils"
+import { notifyOptIn } from "@/utils/opt-in"
 
-import { FilterBuilder } from "lib/algolia/filter-builder"
-import type { Review } from "lib/reviews/types"
-import type { PlatformCollection } from "lib/shopify/types"
+import { FilterBuilder } from "@/lib/algolia/filter-builder"
+import type { Review } from "@/lib/reviews/types"
+import type { PlatformCollection } from "@/lib/shopify/types"
 
-import { HITS_PER_PAGE } from "constants/index"
+import { HITS_PER_PAGE } from "@/constants/index"
 
 import { searchClient as algolia, type SortType } from "./client"
 

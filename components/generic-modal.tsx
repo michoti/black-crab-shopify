@@ -1,6 +1,6 @@
-import { Dialog, DialogClose, DialogContent, DialogHeader, DialogTitle } from "components/ui/dialog"
-import { CloseIcon } from "components/icons/close-icon"
-import { cn } from "utils/cn"
+import { Dialog, DialogClose, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import { CloseIcon } from "@/components/icons/close-icon"
+import { cn } from "@/utils/cn"
 
 interface FacetsModalProps {
   open?: boolean
